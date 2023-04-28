@@ -9,10 +9,10 @@ class Command(BaseCommand):
         parser.add_argument("questions", type=int)
 
     def handle(
-            self,
-            *args,
-            questions,
-            **options,
+        self,
+        *args,
+        questions,
+        **options,
     ):
         fake = Faker()
         fake.name()
